@@ -91,12 +91,12 @@ const HashtagInputComponent: HashtagProps = (props) => {
     }
   };
 
-  const onBlurCustom = (e: any) => {
+  /*const onBlurCustom = (e: any) => {
     setIsFocus(false);
     if (onBlur) {
       onBlur(e);
     }
-  };
+  };*/
 
   const onRemoveItem = useCallback(
     (index: number) => {
