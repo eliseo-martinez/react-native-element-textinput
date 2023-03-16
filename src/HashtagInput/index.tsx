@@ -91,12 +91,13 @@ const HashtagInputComponent: HashtagProps = (props) => {
     }
   };
 
-  /*const onBlurCustom = (e: any) => {
+  const onBlurCustom = (e: any) => {
     setIsFocus(false);
     if (onBlur) {
       onBlur(e);
     }
-  };*/
+    onSubmitEdit();
+  };
 
   const onRemoveItem = useCallback(
     (index: number) => {
@@ -223,7 +224,7 @@ const HashtagInputComponent: HashtagProps = (props) => {
               placeholderTextColor={placeholderTextColor}
               onChangeText={onChange}
               onFocus={onFocusCustom}
-              onBlur={onSubmitEdit}
+              onBlur={onBlurCustom}
               onSubmitEditing={onSubmitEdit}
             />
           </View>
