@@ -223,7 +223,7 @@ const HashtagInputComponent: HashtagProps = (props) => {
               placeholderTextColor={placeholderTextColor}
               onChangeText={onChange}
               onFocus={onFocusCustom}
-              onBlur={onBlurCustom}
+              onBlur={onSubmitEdit}
               onSubmitEditing={onSubmitEdit}
             />
           </View>
